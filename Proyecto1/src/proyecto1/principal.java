@@ -58,6 +58,11 @@ public class principal extends javax.swing.JFrame {
         });
 
         btnlilmpiar.setText("Limpiar");
+        btnlilmpiar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnlilmpiarActionPerformed(evt);
+            }
+        });
 
         jLabel4.setFont(new java.awt.Font("Ravie", 0, 24)); // NOI18N
         jLabel4.setText("SUMAR");
@@ -136,6 +141,12 @@ public class principal extends javax.swing.JFrame {
       suma=num1+num2;
       JOptionPane.showMessageDialog(null, "La suma es:"+suma);
     }//GEN-LAST:event_btncalcularActionPerformed
+
+    private void btnlilmpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnlilmpiarActionPerformed
+txtnumero1.setText("");
+txtnumero2.setText("");
+requestFocus();
+    }//GEN-LAST:event_btnlilmpiarActionPerformed
 
     /**
      * @param args the command line arguments
